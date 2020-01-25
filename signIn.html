@@ -1,3 +1,4 @@
+	
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,15 +12,12 @@
   grid-template-columns: 45% 55%;
   column-gap: 0px;
   height: 100%;
+background-color:#f9d5bb;
 }
 
 #up {
   
   background-color:#d35656 ;
-}
-
-#in{
-    background-color:#f9d5bb;
 }
 fieldset{
     background: white;
@@ -63,28 +61,31 @@ fieldset .action-button{
 #up h1{
     text-align:center ;
     color: white;
-    padding: 70px 20px 10px 20px;
+    padding: 70px 20px 0px 20px;
     font-family: 'Nunito', sans-serif;
+    font-size: 300%;
 }
 #up p{
     text-align:center ;
     color: white;
     font-family: 'Nunito', sans-serif;
+    font-size: 150%;
+    margin:50px;
 
 }
-#up h4{
-    color: white;
+
+#up a{
+    text-decoration: none;
+    color:white;
     padding:10px;
     border:solid white 1px;
     border-radius:5px;
-    margin:0px 60px 0px 150px;
-    width:30%;
-    text-align: center;
+    margin:0px 60px 0px 200px;
 }
-#up h4:hover{
-    background-color:white;
-    color:#2C3E50;
 
+#up a:hover{
+    color:#2C3E50;
+    background-color: white;
 }
 fieldset .action-button:hover{
 box-shadow: 0 0 0 2px white, 0 0 0 3px #f9d5bb ;
@@ -94,12 +95,16 @@ box-shadow: 0 0 0 2px white, 0 0 0 3px #f9d5bb ;
 <body>
     <div id="wrapper">
     <div id="up"><h1>Welcome User</h1><p>Get started by signing up.<br></p>
-    <h4 a href="sign.html">SIGN UP</a></h4></div>
+    <div>
+    <a href="sign.html">SIGN UP</a></div>
+        
+    </div>
     <div id="in"><fieldset><h2 class="fs-title">sign in</h2>
         <input type="text" name="username" placeholder="Username" />
 <input type="password" name="pass" placeholder="Password" />
 <input type="button" name="next" class="next action-button" value="LOGIN" />
     </fieldset></div>
-</div>
+
 </body>
 </html>
+
