@@ -3,50 +3,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link href="hospital.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet"> 
+    <title>hospitalSign</title>
+    <link rel="stylesheet" href="hospital.css">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
 </head>
 <body>
-    <table>
-     <tr><td><input type="checkbox"></td>
-    <td><img src="3.png" class="img"></td>
-    <td class="table">Anaesthesia</td>
-    </tr>
-    <tr><td><input type="checkbox"></td>
-        <td><img src="5.jpeg" class="img"></td>
-        <td class="table">Blood Disorders</td>
-    </tr>
-    <tr><td><input type="checkbox"></td>
-        <td><img src="8.jpg" class="img"></td>
-        <td class="table">Cardiac Surgery</td>
-    </tr>
-    <tr><td><input type="checkbox"></td>
-        <td><img src="9 and 10.jpg" class="img"></td>
-        <td class="table">Cardiology</td>
-    </tr>
-    <tr><td><input type="checkbox"></td>
-        <td><img src="11.jpg" class="img"></td>
-        <td class="table">Dental Sciences</td>
-    </tr>
-    <tr><td><input type="checkbox"></td>
-        <td><img src="12.png" class="img"></td>
-        <td class="table">Dermatology</td>
-    </tr>
-    <tr><td><input type="checkbox"></td>
-        <td><img src="13.jpg" class="img"></td>
-        <td class="table">Diabetes And Endocrinology</td>
-    </tr>
-    <tr><td><input type="checkbox"></td>
-        <td><img src="14.jpg" class="img"></td>
-        <td class="table">Dietics And Clinical Nutrition</td>
-    </tr>
-    <tr><td><input type="checkbox"></td>
-        <td><img src="15.jpg" class="img"></td>
-        <td class="table">ENT</td>
-    </tr>
+    <div class="top" id="top">
+        <div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <span onclick="openPage()" id="contact" style="background-color:#f9d5bb">CONTACT</span>
+            <li><a href="">About</a></li>
+        </ul>
+        </div>
+    </div>
 
-    </table>
-    
+    <div id="page" class="opPage">
+        <a href="javascript:void(0)" class="close" onclick="closePage()">&#10005;</a>
+        <div class="content">
+            <p id="message">LEAVE A MESSAGE</p><br>
+            <div class="detail">
+            <input type="text" placeholder=" First Name" style="border-radius: 5px; height:30px; width:200px" ><br><br>
+            <input type="text" placeholder=" Last Name" style="border-radius: 5px; height:30px; width:200px"><br><br>
+            <input type="email" placeholder=" What's your e-mail" style="border-radius: 5px; height:30px; width:200px"><br><br>
+            <textarea placeholder="Message..." style="height:100px; width:200px; border-radius:5px"></textarea><br><br>
+            <button id="send">SEND</button><br><br>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div>
+            <h2 class="heading">REQUIRED INFORMATION</h2>
+            
+        </div>
+        <div>
+            <form id="form">
+                <input type="text" name="name" style="height:7%; width:40%; font-size:20px;" placeholder="NAME"><br><br>
+                <textarea name="address" id="" cols="30" rows="3" style="height:7%; width:40%; font-size:20px;" placeholder="ADDRESS"></textarea><br><br>
+                <label >Do You Have A Token System?</label><br><br>
+                <input type="radio" name="radioo" value="yes"  id="dis"/>Yes<br>
+                <input type="radio" name="radioo" value="no" id="lis2"/>No<br><br>
+                <input type="text" name="address" id="hid" style="height:7%; width:40%;font-size:20px;" placeholder="Link To Token Website"><br><br>
+                <label id="left">Specialities:</label>
+                <table>
+                    <tr><td><input type="checkbox"></td>
+                   <td><img src="3.png" class="img"></td>
+                   <td class="table">Anaesthesia</td>
+                   </tr>
+                   <tr><td><input type="checkbox"></td>
+                       <td><img src="5.jpeg" class="img"></td>
+                       <td class="table">Blood Disorders</td>
+                   </tr>
+                   <tr><td><input type="checkbox"></td>
+                       <td><img src="8.jpg" class="img"></td>
+                       <td class="table">Cardiac Surgery</td>
+                   </tr>
+                   <tr><td><input type="checkbox"></td>
+                       <td><img src="9 and 10.jpg" class="img"></td>
+                       <td class="table">Cardiology</td>
+                   </tr>
+                   <tr><td><input type="checkbox"></td>
+                       <td><img src="11.jpg" class="img"></td>
+                       <td class="table">Dental Sciences</td>
+                   </tr>
+                   <tr><td><input type="checkbox"></td>
+                       <td><img src="12.png" class="img"></td>
+                       <td class="table">Dermatology</td>
+                   </tr>
+                   <tr><td><input type="checkbox"></td>
+                       <td><img src="13.jpg" class="img"></td>
+                       <td class="table">Diabetes And Endocrinology</td>
+                   </tr>
+                   <tr><td><input type="checkbox"></td>
+                       <td><img src="14.jpg" class="img"></td>
+                       <td class="table">Dietics And Clinical Nutrition</td>
+                   </tr>
+                   <tr><td><input type="checkbox"></td>
+                       <td><img src="15.jpg" class="img"></td>
+                       <td class="table">ENT</td>
+                   </tr>
+               
+                   </table>
+                   <button id="send">SUBMIT</button><br><br>
+            </form>
+        </div>
+    </div>
+        
+    <script src="hospital.js"></script> 
 </body>
 </html>

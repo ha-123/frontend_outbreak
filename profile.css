@@ -122,3 +122,8 @@ td{
 #scheme h1{
     text-align: center;
 }
+.container{
+    display:grid;
+    grid-template-columns: 30% 70%;
+    background-color: #f9d5bb ;
+}
